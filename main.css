@@ -1,6 +1,10 @@
 @font-face {
-  font-family: Norse;
-  src: url(/fonts/Norse-Bold.otf);
+  font-family: 'Norse';
+  src: url('fonts/Norse-Bold.woff2') format('woff2'),
+      url('fonts/Norse-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 .main {
@@ -18,38 +22,50 @@
 .background-container {
   background: no-repeat center/cover
     url(/images/photo-1585202900225-6d3ac20a6962.avif);
-    height: 1000px;
-    width: 600px;
-    flex-direction: column-reverse;
-    color: white;
-    text-align: center;
+  height: 1000px;
+  width: 600px;
+  flex-direction: column-reverse;
 }
 
 .logo-container {
-    background: rgba(2, 2, 2, .5);
-    position: absolute;
-    top: 200px;
-    width: 600px;
-    height: 150px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+  background: rgba(2, 2, 2, 0.5);
+  position: absolute;
+  top: 200px;
+  width: 600px;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
 .odin-heading {
-    font-family: Norse, 'Times New Roman', Times, serif;
-    color: white;
-    font-size: 100px;
+  font-family: 'Norse', 'Times New Roman', Times, serif;
+  color: white;
+  font-size: 100px;
 }
 
 #logo {
-    max-height: 125px;
-    width: auto;
+  max-height: 125px;
+  width: auto;
+}
+
+.image-credit {
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .image-credit > a,
 .image-credit > a:visited {
-    color: white;
+  color: white;
+}
+
+.form-container {
+  justify-content: center;
+  margin-left: 35px;
+
 }
