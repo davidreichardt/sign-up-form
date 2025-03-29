@@ -1,4 +1,55 @@
 @font-face {
-    font-family: Norse;
-    src: url(/fonts/Norse-Bold.otf);
-}   
+  font-family: Norse;
+  src: url(/fonts/Norse-Bold.otf);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 1000px;
+  width: 600px;
+}
+
+.background-container {
+  background: no-repeat center/cover
+    url(/images/photo-1585202900225-6d3ac20a6962.avif);
+    height: 1000px;
+    width: 600px;
+    flex-direction: column-reverse;
+    color: white;
+    text-align: center;
+}
+
+.logo-container {
+    background: rgba(2, 2, 2, .5);
+    position: absolute;
+    top: 200px;
+    width: 600px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.odin-heading {
+    font-family: Norse, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 100px;
+}
+
+#logo {
+    max-height: 125px;
+    width: auto;
+}
+
+.image-credit > a,
+.image-credit > a:visited {
+    color: white;
+}
