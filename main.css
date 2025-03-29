@@ -1,37 +1,46 @@
 @font-face {
   font-family: 'Norse';
   src: url('fonts/Norse-Bold.woff2') format('woff2'),
-      url('fonts/Norse-Bold.woff') format('woff');
+    url('fonts/Norse-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .main {
   display: flex;
   justify-content: center;
+  width: 100vw;
+  
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  height: 1000px;
-  width: 600px;
+  height: 100vh;
+  width: 50vw;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .background-container {
   background: no-repeat center/cover
     url(/images/photo-1585202900225-6d3ac20a6962.avif);
-  height: 1000px;
-  width: 600px;
+  height: 100vh;
+  width: 40vw;
   flex-direction: column-reverse;
 }
 
 .logo-container {
   background: rgba(2, 2, 2, 0.5);
   position: absolute;
-  top: 200px;
-  width: 600px;
+  top: 350px;
+  width: 40vw;
   height: 150px;
   display: flex;
   flex-direction: row;
@@ -56,7 +65,7 @@
   text-align: center;
   font-weight: lighter;
   font-size: 12px;
-  font-family: Arial, Helvetica, sans-serif;
+  opacity: 40%;
 }
 
 .image-credit > a,
@@ -65,7 +74,63 @@
 }
 
 .form-container {
+  box-sizing: border-box;
   justify-content: center;
-  margin-left: 35px;
+  width: 60vw;
+  padding: 35px;
+  background-color: #ECECEC;
+}
 
+.cta > p,
+.form-area > p {
+  font-size: 25px;
+}
+
+.form-area {
+  width: 600pxpx;
+  background-color: #F5F5F5;
+  margin-left: -35px;
+  padding: 35px;
+}
+
+.form-area label {
+  letter-spacing: 1px;
+  opacity: 80%;
+}
+
+.form-area input {
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  width:275px;
+  height: 30px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.form-area input:focus {
+outline: none;  
+border: 1px solid #218cff;
+box-shadow: 0 0 4px #218cff;
+}
+
+.form-area input[type="password"]:not(:focus):user-invalid {
+  border: 1px solid red;
+}
+
+.submit-button {
+  background-color: #596D48;
+  border: none;
+  border-radius: 10px;
+  width: 220px;
+  height: 50px;
+  color: white;
+  font-size: 18px;
+  margin: 40px 0;
+  cursor: pointer;
+}
+
+.form-container > p > a,
+.form-container > p > a:visited {
+  text-decoration: none;
+  color: #596D48;
 }
